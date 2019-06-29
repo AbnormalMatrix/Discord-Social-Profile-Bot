@@ -6,9 +6,9 @@ interest_categories = ["video games", "programming", "reading", "movies", "sport
 
 
 #client_id = 592761539061350436
-#token = NTkyNzYxNTM5MDYxMzUwNDM2.XRECWg.s4qbh9cJeyOMYOpvT11CQbJu9OM
+#token = token
 
-token = "NTkyNzYxNTM5MDYxMzUwNDM2.XRECWg.s4qbh9cJeyOMYOpvT11CQbJu9OM"
+token = "Enter your token
 
 client = discord.Client()
 
