@@ -6,9 +6,9 @@ interest_categories = ["video games", "programming", "reading", "movies", "sport
 
 
 #client_id = 592761539061350436
-#token = token
 
-token = "Enter your token
+
+token = token
 
 client = discord.Client()
 
@@ -144,7 +144,6 @@ async def on_message(message):
 		await message.channel.send("Type ! followed by an interest of yours to be added to the list!")
 
 	elif "!interest" in message.content.lower():
-
 		user = message.author
 		interest = message.content.lower()
 		interest = interest.replace("!interest ", "")
@@ -153,7 +152,7 @@ async def on_message(message):
 			user_interest(interest, user)
 			await message.channel.send(f"Set interest to {interest}")
 		else:
-			pass
+			await message.channel.send("An error occured. Please try registering again !register .")
 
 	elif message.content.lower() == "!find friends":
 		user = message.author
